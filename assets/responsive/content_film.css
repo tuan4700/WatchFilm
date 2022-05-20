@@ -1,0 +1,67 @@
+/* Tablet and Mobile */
+@media (max-width: 1023px) {
+
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .content-film__info-block {
+        flex-direction: column;
+    }
+
+    .content-film__info__name {
+        text-align: center;
+    }
+
+    .content-film__info__sub-name {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .content-film__info__status, 
+    .content-film__info__actor, 
+    .content-film__info__genre {
+        flex-basis: 50%;
+        margin-right: 14px;
+        margin-left: 4px;
+    }
+
+    .content-film__info__status, 
+    .content-film__info__nation, 
+    .content-film__info__actor, 
+    .content-film__info__director, 
+    .content-film__info__genre, 
+    .content-film__info__time {
+        padding: 10px 0;
+    }
+
+    .content-film__info__nation, 
+    .content-film__info__director, 
+    .content-film__info__time {
+        margin-right: 0;
+    }
+
+    .content-film__info__watch {
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+        margin-bottom: 8px;
+    }
+
+    .content-film__info__watch-like-rating {
+        flex-direction: column-reverse;
+    }
+
+    .content-film__info__like {
+        margin: 7px 10px 0 auto;
+    }
+
+    .content-film__info__block-play {
+        display: none;
+    }
+}

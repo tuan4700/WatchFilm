@@ -1,0 +1,55 @@
+/* Tablet and Mobile */
+@media (max-width: 1023px) {
+    
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .content__viewport__main {
+        display: none;
+    }
+
+    .content__product__background {
+        display: flex;
+    }
+
+    .content__product__plot {
+        display: block;
+        border-top: 1px solid #DEDEDE;
+    }
+
+    .content__product__info,
+    .content__product__info-vi,
+    .content__product__info-eng {
+        background-color: #f4f4f4;
+    }
+
+    .content__product__info-vi {
+        margin-top: 4px;
+    }
+
+    .content__product__img {
+        width: 25%;
+    }
+
+    .content__product-block {
+        width: 75%;
+    }
+
+    .content__product__list {
+        background-color: var(--white-color);
+    }
+
+    .content__product__background:hover .content__product__item-overlay.product__overlay {
+        display: none;
+    }
+
+    .content__list-product__title {
+        margin-top: 10px;
+    }
+}

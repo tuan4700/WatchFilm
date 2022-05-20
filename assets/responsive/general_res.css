@@ -1,0 +1,143 @@
+/* Tablet and Mobile */
+@media (max-width: 1023px) {
+    .grid.wide {
+        width: 100%;
+    }
+
+    .heading__nav-bar__list {
+        display: none;
+    }
+    
+    .heading__nav-bar__history {
+        position: fixed;
+        width: 100vw;
+        top: 88px;
+        left: 0;
+        border-radius: 0;
+        border-width: 1px solid;
+        border-color: #c4c4c4 transparent transparent transparent;
+    }
+
+    .heading__nav-bar__auth {
+        height: 100%;
+    }
+    
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .heading__block-search {
+        width: 62%;
+    }
+
+    .heading__history__search {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .hidden-mobile {
+        display: none;
+    }
+
+    .heading__block-search {
+        width: 84%;
+    }
+
+    .heading__search {
+        display: none;
+    }
+
+    .heading__history__search {
+        display: block;
+    }
+
+    .heading__search-check__inp-mobile:checked ~ .heading__nav-bar__history {
+        display: block;
+    }
+
+    .heading__login {
+        display: none;
+    }
+
+    .heading__register {
+        display: none;
+    }
+
+    .heading__user {
+        display: flex;
+        align-items: center;
+    }
+
+    .heading__user__avartar {
+        width: 32px;
+        height: 32px;
+        background-size: 32px;
+        border-radius: 16px;
+    }
+
+    .heading__bell {
+        margin-bottom: 0;
+        margin-right: 8px;
+    }
+
+    .heading__bell-icon {
+        font-size: 2.4rem;
+    }
+
+    .heading__search-icon {
+        top: -9px;
+        font-size: 2.4rem;
+    }
+
+    .heading__notifi {
+        position: fixed;
+        width: 100vw;
+        top: var(--heading-height);
+        right: 0;
+        border-radius: 0;
+        background-color: var(--white-color);
+    }
+
+    .heading__notifi::before {
+        display: none;
+    }
+
+    .heading__notifi__view-all {
+        color: var(--black-color);
+    }
+
+    .heading__logo {
+        justify-content: center;
+    }
+
+    .content__menu-list {
+        display: flex;
+    }
+
+    .heading__user__menu-mobile {
+        width: 70vw;
+    }
+
+    .heading__user__sign-in {
+        display: block;
+    }
+
+    .content__product__wrap {
+        max-height: none;
+    }
+}
+
+/* Logo */
+@media (min-width: 1024px) and (max-width: 1239px) {
+    .heading__logo__img {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1112px) {
+    .hidden {
+        display: none;
+    }
+}

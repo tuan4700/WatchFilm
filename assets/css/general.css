@@ -1,0 +1,1565 @@
+/* Base general */
+/* --Begin-- */
+:root {
+    /* Color */
+    --general-color: #26A7ED;
+    --black-color: #000;
+    --white-color: #fff;
+    --sub-general-color: #2AA5F2;
+    --background-color: rgb(222, 222, 222);
+    --text-color: #666;
+    --name-film-color: rgb(174 174 174);
+
+    /* Size */
+    --heading-height: 88px;
+    --viewport-info-height: 46px;
+    --status-height: 20px;
+    --viewport-height: 252px;
+    --height-handle-video: 472px;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.app {
+    width: 100vw;
+    background-color: var(--background-color);
+    overflow: hidden;
+}
+
+.app__overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background-color: var(--black-color);
+    opacity: 0.05;
+    z-index: 2;
+    display: none;
+}
+
+.hover__text {
+    cursor: text;
+}
+
+.btn {
+    width: 76px;
+    height: 26px;
+    border-radius: 4px;
+    border-width: 1px;
+}
+
+.btn__no-boder {
+    height: 28px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 6px;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.btn__no-boder:hover .heading__link-form {
+    color: var(--sub-general-color);
+}
+
+.block-content {
+    display: flex;
+}
+
+.like-icon {
+    position: absolute;
+    top: 4px;
+    left: 10px;
+    font-size: 1.6rem;
+}
+
+/* Name-film */
+.name-film__vi,
+.name-film__eng {
+    padding-left: 6px;
+    padding-right: 2px;
+}
+
+.name-film__vi {
+    font-size: 1.2rem;
+    font-weight: 600;
+    height: 23px;
+    line-height: 28px;
+    cursor: initial;
+    overflow: hidden;
+}
+
+.name-film__vi.s-product {
+    height: 18px;
+    line-height: 16px;
+}
+
+.name-film__eng {
+    height: 23px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 20px;
+    cursor: text;
+    overflow: hidden;
+}
+
+.name-film__eng.s-product {
+    height: 18px;
+    line-height: 16px;
+}
+
+/* Status */
+.status {
+    position: absolute;
+    top: 6px;
+    left: 1px;
+    height: 20px;
+    max-width: 128px;
+    background-color: var(--general-color);
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--white-color);
+    padding-left: 8px;
+    padding-right: 4px;
+    border-radius: 2px;
+}
+
+.status__episodes {
+    padding-right: 4px;
+}
+
+.status__language::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 0.5px;
+    border-width: 3px 2px;
+    border-style: solid;
+    border-color: var(--general-color) var(--general-color) transparent transparent;
+    filter: brightness(70%);
+}
+
+.product__img {
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Product Play */
+.product__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+    display: none;
+}
+
+.product__overlay__icon {
+    color: var(--white-color);
+    height: 206px;
+    line-height: 206px;
+    font-size: 3.6rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* Content__Movie__More */
+.content__product__foot {
+    height: 10px;
+    background-image: url("http://tvhai.org/wp-content/themes/tvhay/images/sprite1.png");
+    background-position: 0 -218px;
+    width: 100%;
+}
+
+/* --End-- */
+
+/* -----Heading----------- */
+/* --Begin-- */
+.heading {
+    height: var(--heading-height);
+    background-color: var(--white-color);
+    background-image: linear-gradient(0, rgba(222, 222, 222, 0.2), transparent);
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+}
+
+.heading__nav-block {
+    height: var(--heading-height);
+}
+
+/* Heading_Logo */
+.heading__logo {
+    --logo-height: 36px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.heading__logo__img {
+    display: block;
+    position: relative;
+    background-image: url(/assets/image/logo.png);
+    width: 162px;
+    height: 52px;
+    background-repeat: no-repeat;
+    margin-left: 4px;
+}
+
+.heading__logo__link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin-left: 6px;
+    color: var(--text-color);
+    opacity: 0.6;
+    font-weight: 400;
+    display: block;
+    line-height: 1.3rem;
+    height: 14px;
+    position: absolute;
+    left: 0px;
+    top: var(--logo-height);
+}
+
+/* Heading_Nav-Bar */
+.heading__nav-bar {
+    --icon-search-size: 16px;
+    --heading-search-width: 100%;
+    --heading-search-height: 27px;
+    --heading-search-margin-top: 14px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.heading__nav-bar__auth {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 60%;
+}
+
+.heading__block-search {
+    width: 65%;
+    position: relative;
+}
+
+.heading__search {
+    height: var(--heading-search-height);
+    width: var(--heading-search-width);
+    border-radius: 16px;
+    border: 1px solid #c4c4c4;
+    box-shadow: 0 5px 7px -5px #cccccc inset;
+    padding-left: 16px;
+    padding-right: 8px;
+    font-size: 1.2rem;
+    letter-spacing: 0.4px;
+    font-weight: 400;
+    outline: none;
+    position: relative;
+}
+
+.heading__search:focus ~ .heading__nav-bar__history {
+    display: block;
+}
+
+.heading__nav-bar__history {
+    --bottom-left-right-radius: 8px;
+    position: absolute;
+    top: 26px;
+    left: 10px;
+    width: calc(var(--heading-search-width) - 22px);
+    z-index: 1;
+    border-bottom-left-radius: var(--bottom-left-right-radius);
+    border-bottom-right-radius: var(--bottom-left-right-radius);
+    background-color: var(--white-color);
+    border: 1px solid #c4c4c4;
+    display: none;
+}
+
+.heading__history__search {
+    height: var(--heading-search-height);
+    width: 100%;
+    border: none;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    padding-left: 16px;
+    font-size: 1.2rem;
+    letter-spacing: 0.4px;
+    font-weight: 400;
+    outline: none;
+    display: none;
+}
+
+.heading__search-list {
+    display: block;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    background-color: var(--white-color);
+    max-height: 300px;
+    border-bottom-left-radius: var(--bottom-left-right-radius);
+    border-bottom-right-radius: var(--bottom-left-right-radius);
+    overflow-y: auto;
+}
+
+.heading__history__search-icon {
+    display: none;
+}
+
+.heading__search-item {
+    font-size: 1.6rem;
+    padding-top: 8px;
+    padding-bottom: 6px;
+    font-weight: 400;
+}
+
+.heading__search-item:last-child {
+    border-bottom-left-radius: var(--bottom-left-right-radius);
+    border-bottom-right-radius: var(--bottom-left-right-radius);
+}
+
+/* .heading__search-item:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+} */
+
+.heading__search-item__history {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-color);
+    opacity: 0.6;
+    padding: 0 10px;
+}
+
+.heading__search-icon {
+    position: absolute;
+    top: 2px;
+    right: 8px;
+    font-size: var(--icon-search-size);
+    cursor: pointer;
+    width: 28px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+}
+
+.heading__auth {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 6px;
+    font-size: 1.4rem;
+    align-items: center;
+}
+
+.heading__bell {
+    --bell-padding-left: 4px;
+    --bell-height: 24px;
+    width: calc(var(--bell-height) + var(--bell-padding-left));
+    height: var(--bell-height);
+    align-self: center;
+    padding-left: var(--bell-padding-left);
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.heading__bell:hover .heading__notifi {
+    display: block;
+}
+
+.heading__bell-icon {
+    width: var(--bell-height);
+    line-height: var(--bell-height);
+    height: var(--bell-height);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+/* Heading_Notification */
+.heading__notifi {
+    width: 300px;
+    background-color: #c1ff43;
+    position: absolute;
+    top: calc(var(--bell-height) + 8px);
+    right: -2px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0px 1px 6px rgb(0 0 0 / 28%);
+    display: none;
+    z-index: 3;
+    animation: HeadingNotifi linear 0.15s;
+}
+
+@keyframes HeadingNotifi {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.heading__notifi::after {
+    content: "";
+    position: absolute;
+    top: -16px;
+    right: 0;
+    width: 32px;
+    height: 20px;
+}
+
+.heading__notifi::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: 0;
+    border-width: 10px 16px;
+    border-style: solid;
+    border-color: transparent transparent #c1ff43 transparent;
+}
+
+.heading__notifi__text {
+    margin: 0 2px;
+    height: 32px;
+    line-height: 32px;
+    font-weight: 500;
+    font-size: 2rem;
+    padding-left: 12px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.heading__notifi__list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.heading__notifi__item {
+    display: flex;
+    align-content: center;
+    padding: 8px 6px 0;
+    cursor: pointer;
+}
+
+.heading__notifi__item:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.heading__notifi__img {
+    width: 52px;
+    height: 52px;
+    text-align: center;
+    line-height: 52px;
+}
+
+.heading__notifi__img-film {
+    width: 86%;
+    height: 86%;
+    border-radius: 22px;
+}
+
+.heading__notifi__content {
+    flex: 1;
+    padding-left: 8px;
+}
+
+.heading__notifi__name-vi {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+    max-height: 16px;
+    line-height: 16px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+.heading__notifi__name-eng {
+    margin: 0;
+    font-size: 1.3rem;
+    color: rgb(141, 141, 141);
+    font-weight: 400;
+    max-height: 16px;
+    line-height: 16px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+.heading__notifi__info {
+    display: flex;
+    color: var(--general-color);
+}
+
+.heading__notifi__episode {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: 46px;
+}
+
+.heading__notifi__language {
+    margin: 0;
+    flex: 1;
+    text-align: end;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.heading__notifi__view-all {
+    text-decoration: none;
+    color: #f81212;
+    height: 32px;
+    display: block;
+    text-align: center;
+    line-height: 32px;
+    border-top: 1px solid var(--background-color);
+    margin: 4px 2px 0;
+}
+
+.heading__notifi__view-all:hover {
+    opacity: 0.5;
+}
+
+/* Heading_Login-Register */
+.heading__login {
+    position: relative;
+    padding: 0;
+    margin: 0 0 6px 6px;
+}
+
+.heading__link-form {
+    color: var(--black-color);
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+/* .heading__login::after {
+    content: "";
+    position: absolute;
+    top: 10%;
+    right: -2%;
+    height: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+} */
+
+.heading__user {
+    display: flex;
+    margin: 2px 12px 0 4px;
+}
+
+.heading__user__avartar {
+    width: 24px;
+    height: 24px;
+    border: 1px solid var(--background-color);
+    background-image: url('/assets/image/product/dau-pha-thuong-khung-tam-nien-chi-uoc.png');
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: inherit;
+    border-radius: 12px;
+}
+
+.heading__user__name {
+    margin-left: 2px;
+    margin-top: 2px;
+    padding-top: 2px;
+    color: var(--text-color);
+}
+
+.heading__user__sign-out {
+    line-height: 24px;
+    cursor: pointer;
+    color: var(--text-color);
+    height: 24px;
+    padding: 0 6px;
+}
+
+.heading__user__sign-in {
+    width: 26px;
+    height: 26px;
+    background-image: url('./assets/image/sign-in-icon.png');
+    background-size: 2.6rem;
+    display: none;
+}
+
+.heading__user__menu-mobile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    background-color: var(--white-color);
+    z-index: 3;
+    display: none;
+}
+
+.heading__menu-mobile__avartar {
+    width: 100px;
+    height: 100px;
+    border: 1px solid var(--background-color);
+    background-image: url('/assets/image/product/dau-pha-thuong-khung-tam-nien-chi-uoc.png');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: inherit;
+    border-radius: 50px;
+    margin: 12px auto;
+}
+
+.heading__menu-mobile__name {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.heading__nav-bar__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    margin: 0;
+    height: 40%;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.heading__nav-bar__item {
+    display: block;
+    width: auto;
+    position: relative;
+    cursor: pointer;
+    height: 100%;
+}
+
+.heading__nav-bar__item:nth-child(2):hover .heading__nav-bar__category {
+    display: block;
+}
+
+.heading__nav-bar__item:nth-child(3):hover .heading__nav-bar__category-country {
+    display: block;
+}
+
+.heading__nav-bar__item:nth-child(4):hover .heading__nav-bar__category-year {
+    display: block;
+}
+
+.heading__nav-bar__link {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 0 16px;
+    position: relative;
+    line-height: 36px;
+}
+
+.heading__nav-bar__link:hover {
+    color: var(--general-color);
+}
+
+.heading__nav-bar__category,
+.heading__nav-bar__category-country {
+    position: absolute;
+    top: 32px;
+    left: 0;
+    width: 490px;
+    background-color: rgba(255, 255, 255, 0.94);
+    border-radius: 6px;
+    box-shadow: 0 0px 6px rgb(0 0 0 / 28%);
+    display: none;
+    z-index: 1;
+    animation: CategoryFilm linear 0.15s;
+}
+
+@keyframes CategoryFilm {
+    from {
+        opacity: 0;
+        z-index: -1;
+        top: 0;
+    }
+    to {
+        opacity: 1;
+        z-index: 1;
+        top: 32px;
+    }
+}
+
+.heading__nav-bar__category::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 0;
+    height: 12px;
+    width: 20%;
+}
+
+.heading__nav-bar__category-country::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 0;
+    height: 12px;
+    width: 20%;
+}
+
+.heading__category__form {
+    margin: 8px 0;
+}
+
+.heading__category__list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 8px;
+    font-size: 1.2rem;
+}
+
+.heading__category__item-link {
+    height: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    margin-top: 6px;
+    padding-left: 4px;
+    color: var(--black--color);
+    display: block;
+}
+
+.heading__category__item:hover {
+    background-color: var(--general-color);
+    border-radius: 4px;
+}
+
+.heading__category__item:hover .heading__category__item-link {
+    color: rgb(248, 248, 248);
+}
+/* --End-- */
+
+/* -------------Content----------------------- */
+/* --Begin-- */
+/* Movie More */
+.content,
+.content-film {
+    margin-top: var(--heading-height);
+}
+
+.content__menu-list {
+    padding-left: 0;
+    display: none;
+    width: 100%;
+    margin: 6px 0;
+}
+
+.content__menu-item {
+    list-style: none;
+    border: 1px solid #d4d4d4;
+    background-color: var(--white-color);
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-align: center;
+    height: 34px;
+    line-height: 34px;
+    border-radius: 2px;
+}
+
+.content__menu-item:first-child,
+.content__menu-item:nth-child(2) {
+    width: 30%;
+}
+
+.content__menu-item:nth-child(3) {
+    width: 40%;
+}
+
+.content__movie-voiceover {
+    width: 190px;
+}
+
+.content__movie-more {
+    margin-top: 4px;
+    border: 1px solid #CFD1D1;
+}
+
+.content__movie-more__heading {
+    height: 32px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    background-color: var(--white-color);
+    line-height: 32px;
+    padding-left: 16px;
+    opacity: 0.7;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.content__movie-more__view {
+    border-top: 1px solid #CFD1D1;
+}
+
+.content__movie-more__info {
+    background-color: var(--white-color);
+    height: 46px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 6px;
+}
+
+.content__movie-more__time {
+    height: 26px;
+    width: 112px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #7E7E7E;
+    text-align: center;
+    line-height: 26px;
+    cursor: pointer;
+}
+
+.content__movie-more__time.movie-more__time-click {
+    background-color: var(--sub-general-color);
+    border-radius: 4px;
+    color: var(--white-color);
+}
+
+.content__movie-more__list {
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+    background-color: var(--white-color);
+}
+
+.content__movie-more__item {
+    display: flex;
+    height: 42px;
+}
+
+.content__movie-more__count {
+    width: 48px;
+    position: relative;
+}
+
+.content__movie-more__count-img {
+    width: 26px;
+    height: 42px;
+    background-image: url(http://tvhai.org/wp-content/themes/tvhay/images/sprite1.png);
+    background-position: 0 -88px;
+    margin: 0 auto;
+}
+
+.content__movie-more__count-number {
+    position: absolute;
+    top: 14px;
+    left: 20px;
+    font-size: 1.4rem;
+    color: var(--general-color);
+    font-weight: 600;
+}
+
+.content__movie-more__count-number-fix {
+    left: 16px;
+}
+
+.content__movie-more__item-info {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content__movie-more__main-info {
+    height: 50%;
+    width: 100%;
+    text-decoration: none;
+    color: var(--black-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.content__movie-more__main-info:hover {
+    opacity: 0.8;
+}
+
+.content__movie-more__sub-info {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.content__sub-info__vi {
+    flex: 1;
+    color: rgb(101 101 101);
+    font-size: 1.1rem;
+    padding-top: 2px;
+}
+
+/* Nominated movies and Completed */
+.content__nom-com-movie {
+    background-color: var(--white-color);
+    border: 1px solid #CFD1D1;
+    margin-top: 10px;
+}
+
+.content__nom-com-movie__heading {
+    height: 36px;
+    border-bottom: 1px solid var(--sub-general-color);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.nom-com-movie__heading__frames,
+.content-film__content-heading__heading {
+    position: relative;
+    height: 28px;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.nom-com-movie__heading__text,
+.content-film__content-heading__text {
+    color: #7E7E7E;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 12px;
+}
+
+.nom-com-movie__heading__text.nom-com-movie__heading__text-click,
+.content-film__content-heading__text.nom-com-movie__heading__text-click {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border: 1px solid var(--sub-general-color);
+    color: #0397F3;
+    border-bottom: transparent;
+}
+
+.nom-com-movie__heading__text-click::after {
+    content: "";
+    border-bottom: 1px solid var(--white-color);
+    position: absolute;
+    bottom: -1px;
+    left: 1px;
+    right: 1px;
+}
+
+.content__nom-com-movie__list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.content__nom-com-movie__item {
+    margin: 8px;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid #F0F0F0;
+    position: relative;
+}
+
+.nom-com-movie__item__name {
+    flex: 1;
+    line-height: 23px;
+    padding-left: 16px;
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+.nom-com-movie__item__name:hover {
+    color: #888;
+}
+
+.nom-com-movie__item__name::after {
+    content: "";
+    position: absolute;
+    bottom: 8px;
+    left: 1px;
+    border: 4px solid var(--sub-general-color);
+    border-radius: 8px;
+}
+
+.nom-com-movie__item__episode {
+    font-size: 1.1rem;
+    line-height: 23px;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.content__product__new-film {
+    width: 84px;
+    height: 32px;
+    background-color: var(--general-color);
+    line-height: 32px;
+    margin: 12px 0 24px auto;
+    border-radius: 4px;
+    position: relative;
+}
+
+.content__new-film__text {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--white-color);
+    text-decoration: none;
+    padding-left: 8px;
+    display: block;
+}
+
+.content__new-film__icon {
+    font-size: 1rem;
+    color: var(--white-color);
+    position: absolute;
+    top: 11px;
+    right: 4px;
+}
+/* Product */
+.content__product {
+    background-color: var(--white-color);
+    padding: 0 8px;
+    background-image: linear-gradient(0, var(--background-color), transparent);
+    margin-bottom: 12px;
+}
+
+.content__product__wrap {
+    max-height: 1415px;
+}
+
+.content__product__list {
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.content__product__item {
+    position: relative;
+    margin-top: 10px;
+}
+.content__product__background {
+    background-color: var(--white-color);
+    border: 1px solid #ececec;
+}
+
+.content__product__background:hover .product__overlay {
+    display: block;
+}
+
+.content__product__img {
+    height: 200px;
+}
+
+.content__product__item-overlay {
+    left: 6px;
+    right: 6px;
+    height: 202px;
+}
+
+.content__product-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.content__product_info {
+    display: flex;
+    flex-wrap: wrap;
+    height: 46px;
+    background-color: var(--white-color);
+}
+
+.content__product__info-eng,
+.content__product__info-vi {
+    overflow: hidden;
+    background-color: var(--white-color);
+}
+
+.content__product__info-eng {
+    color: rgb(101 101 101);
+}
+
+.content__product__plot {
+    display: none;
+    font-size: 1.1rem;
+    padding: 4px 2px 4px 6px;
+    height: 130px;
+    overflow: hidden;
+}
+
+.product__origin {
+    display: flex;
+    height: 30px;
+    border-top: 1px solid #DEDEDE;
+    border-bottom: 1px solid #DEDEDE;
+    align-items: center;
+    position: relative;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: #F4F4F4;
+}
+
+.product__origin__year {
+    width: 55%;
+    padding-left: 6px;
+}
+
+.product__origin__year::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 45%;
+    border: 1px solid #DEDEDE;
+    height: 100%;
+}
+
+.product__origin__like {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.product__origin__like-icon {
+    height: 32px;
+    line-height: 32px;
+    opacity: 0.5;
+}
+
+.product__origin__like-count {
+    align-self: center;
+    padding: 0 6px 0 4px;
+    font-weight: 400;
+}
+
+/* --End-- */
+
+/* ------------Footer------------------------- */
+/* --Begin-- */
+.footer {
+    background-color: var(--white-color);
+}
+
+.footer__gutters {
+    padding-left: 12px;
+    flex-wrap: wrap;
+    padding-bottom: 8px;
+}
+
+.footer__heading {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 16px auto 8px 0;
+}
+
+.footer__list {
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer__item {
+    padding: 2px 0;
+}
+
+.footer__item__link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.footer__wrap {
+    width: 252px;
+    height: 72px;
+    position: relative;
+    margin-top: 16px;
+}
+
+.footer__img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer__content {
+    position: absolute;
+    top: 0;
+    left: 2px;
+    display: flex;
+}
+
+.footer__img__logo {
+    padding: 8px 6px 8px 8px;
+    width: 72px;
+    height: 72px;
+}
+
+.footer__web-info {
+    width: 92px;
+    height: 100%;
+}
+
+.footer__web-info__name {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--white-color);
+    height: 36px;
+    line-height: 36px;
+    text-decoration: none;
+}
+
+.footer__web-info__facebook {
+    display: flex;
+    height: 20px;
+    margin: auto 0;
+    background-color: var(--white-color);
+    cursor: pointer;
+}
+
+.footer__facebook__icon {
+    margin: 4px 4px 4px 6px;
+    width: 12px;
+    height: 12px;
+    color: #3A5897;
+    font-size: 1.4rem;
+}
+
+.footer__facebook__text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 22px;
+    color: var(--text-color);
+}
+
+.footer__web-info__like {
+    color: var(--white-color);
+    padding-top: 40px;
+    padding-left: 4px;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+/* --End-- */
+
+/* ---------HandleUser-------------------- */
+/* --Begin-- */
+.handleUser-film__block-logo {
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 4.1px;
+    color: #bbb;
+    text-align: center;
+    position: relative;
+    padding-top: 43px;
+    margin-top: 30px;
+}
+
+.handleUser-film__logo {
+    width: 152px;
+    height: 43px;
+    background-image: url('/assets/image/details_background.png');
+    background-position: -14px -6px;
+    background-size: 334px;
+    position: absolute;
+    top: 2px;
+    left: 88px;
+    cursor: pointer;
+}
+
+.handleUser-film__heading {
+    font-size: 2.4rem;
+    font-weight: 400;
+    text-align: center;
+    color: #666;
+    margin: 20px 0;
+}
+
+.handleUser-film__block-content {
+    border: 1px solid #D8DEE4;
+    border-radius: 6px;
+    background-color: #F6F8FA;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.4rem;
+    padding: 22px;
+    position: relative;
+}
+
+.handleUser-film__user-inp,
+.handleUser-film__password-inp {
+    height: 32px;
+    width: 100%;
+    color: var(--black-color);
+    border-radius: 6px;
+    border: 1px solid #7e7e7e;
+    outline: none;
+    padding-left: 8px;
+    margin: 8px 0 20px;
+}
+
+.handleUser-film__user-inp::placeholder,
+.handleUser-film__password-inp::placeholder,
+.handleUser-film__password-inp::placeholder {
+    opacity: 0.5;
+}
+
+.handleUser-film__block-password {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.handleUser-film__forgot-password {
+    text-decoration: none;
+    color: var(--general-color);
+    font-size: 1.2rem;
+}
+
+.handleUser-film__btn {
+    height: 30px;
+    width: 100%;
+    border-radius: 6px;
+    background-color: #2DA44E;
+    border: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.handleUser-film__btn:hover {
+    background-color: #2a994c;
+}
+
+.handleUser-film__block-create-account {
+    background-color: var(--white-color);
+    height: 52px;
+    margin-top: 18px;
+    align-items: center;
+    padding: 18px 42px;
+    justify-content: space-around;
+}
+
+.handleUser-film__create-account {
+    text-decoration: none;
+    color: var(--sub-general-color);
+}
+
+.handleUser-film__create-account:hover {
+    text-decoration: underline;
+}
+
+.handleUser-film__block-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    padding: 82px 22px 0 22px;
+}
+
+.handleUser-film__item-info {
+    text-decoration: none;
+    color: var(--general-color);
+}
+
+.handleUser-film__item-info:hover {
+    text-decoration: underline;
+}
+
+.handleUser-film__item-info:last-child {
+    color: #57606A;
+}
+
+.handleUser-film__item-info:last-child:hover {
+    text-decoration: underline;
+    color: var(--general-color);
+}
+
+.handleUser-film__eye-icon {
+    position: absolute;
+    top: 128px;
+    left: 254px;
+    opacity: 0.3;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.handleUser-film__eye-icon:hover {
+    opacity: 0.7;
+}
+/* --End-- */
+
+/* ---------------------User Action-------------------- */
+/* --Begin-- */
+/* Menu User Mobile */
+.user-action__overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--black-color);
+    opacity: 0.15;
+    width: 100vw;
+    height: 100vh;
+}
+
+.user-action__block {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 32%;
+    height: 100vh;
+    background-color: var(--white-color);
+    flex-direction: column;
+}
+
+.user-action__close-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.6rem;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.user-action__block__info-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-action__user-avatar {
+    width: 92px;
+    height: 92px;
+    border: 1px solid #CFD1D1;
+    border-radius: 46px;
+    background-image: url('/assets/image/product/dau-pha-thuong-khung-tam-nien-chi-uoc.png');
+    background-size: 92px;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+}
+
+.user-action__username {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 8px 0 20px;
+    color: var(--text-color);
+}
+
+.user-action__block-menu {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.user-action__category,
+.user-action__log-out {
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding-left: 4px;
+    height: 28px;
+    line-height: 28px;
+    background-color: #707070;
+    color: var(--white-color);
+}
+
+.user-action__category-icon,
+.user-action__log-out-icon {
+    margin-right: 2px;
+    font-size: 1.4rem;
+}
+
+.user-action__category__list {
+    list-style: none;
+    margin: 0 0 0 8px;
+    padding: 0;
+    background-color: #DEE1E6;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.user-action__category__item {
+    width: 50%;
+}
+
+.user-action__category__item-link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--black-color);
+    height: 34px;
+    display: block;
+    padding: 6px;
+    line-height: 22px;
+    font-weight: 500;
+}
+
+.user-action__category__item-link:hover {
+    background-color: var(--general-color);
+    color: var(--white-color);
+}
+
+/* Notification Log-out */
+.notification-log-out {
+    --notification-log-out-width: 328px;
+    --notification-log-out-height: 132px;
+    width: var(--notification-log-out-width);
+    height: var(--notification-log-out-height);
+    background-color: var(--white-color);
+    position: fixed;
+    top: calc(44vh - (var(--notification-log-out-height) / 2));
+    left: calc(50vw - (var(--notification-log-out-width) / 2));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid #B7B9BB;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px var(--black-color);
+}
+
+.notification-log-out__text {
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: center;
+    align-self: center;
+}
+
+.notification-log-out__btn {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: space-around;
+}
+
+.notification-log-out__btn__ok:hover,
+.notification-log-out__btn__cancel:hover {
+    background-color: #40E0D0;
+}
+
+/* --End-- */
+
+.status--hidden {
+    display: none;
+}
+
+.no-cusor {
+    cursor: initial;
+}

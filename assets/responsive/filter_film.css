@@ -1,0 +1,28 @@
+/* Tablet and Mobile */
+@media (max-width: 1023px) {
+
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .content-film {
+        margin-bottom: 12px;
+    }
+
+    #arrange-kind {
+        margin-left: 3px;
+    }
+
+    .filter-film__tool {
+        padding-bottom: 8px;
+    }
+
+    .content__product__wrap {
+        max-height: 4240px;
+    }
+}

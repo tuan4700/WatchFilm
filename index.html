@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://free.vector6.com/wp-content/uploads/2020/07/KhoThietKe-0000000026.jpg">
+    <title>Anime Film</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.3-web/css/all.min.css">
+    <script src="https://kit.fontawesome.com/676a00af5a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./grid.css">
+    <link rel="stylesheet" href="./assets/css/general.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="./assets/responsive/general_res.css">
+    <link rel="stylesheet" href="./assets/responsive/home_res.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app">
+        <!-- Heading -->
+        <div class="heading">
+            <div class="grid wide">
+                <div class="row heading__nav-block">
+                    <div class="col l-2 m-3 c-9 heading__logo">
+                        <a href="http://127.0.0.1:5500/index.html" class="heading__logo__img">
+                            <div class="heading__logo__link">xem phim hay</div>
+                        </a>
+                    </div>
+                    <div class="col l-10 m-9 c-3 heading__nav-bar">
+                        <div class="heading__nav-bar__auth">
+                            <div class="heading__block-search">
+                                <input type="text" placeholder="Tìm kiếm phim..."
+                                    class="heading__search">
+                                <label for="search-mobile-checkin" class="heading__search-check__mobile">
+                                    <i class="heading__search-icon fas fa-search"></i>
+                                </label>
+                                <input type="checkbox" hidden id="search-mobile-checkin" class="heading__search-check__inp-mobile">
+                                <div class="heading__nav-bar__history">
+                                    <input type="text" placeholder="Tìm kiếm phim..."
+                                        class="heading__history__search">
+                                    <ul class="heading__search-list">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="heading__auth">
+                                <div class="heading__bell">
+                                    <i class="heading__bell-icon ti-bell"></i>
+                                    <div class="heading__notifi">
+                                        <h3 class="heading__notifi__text">Thông báo</h3>
+                                        <ul class="heading__notifi__list">
+                                            <li class="heading__notifi__item">
+                                                <div class="heading__notifi__img">
+                                                    <img src="./assets/image/film/dau-la-dai-luc.jpg"
+                                                        alt="Đấu La Đại Lục" class="heading__notifi__img-film">
+                                                </div>
+                                                <div class="heading__notifi__content">
+                                                    <p class="heading__notifi__name-vi">Đấu La Đại Lục</p>
+                                                    <p class="heading__notifi__name-eng">Soul Land</p>
+                                                    <div class="heading__notifi__info">
+                                                        <p class="heading__notifi__episode">Tập 172</p>
+                                                        <p class="heading__notifi__language">Thuyết minh</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="heading__notifi__item">
+                                                <div class="heading__notifi__img">
+                                                    <img src="./assets/image/film/naruto-the-he-tiep-theo.jpg"
+                                                        alt="Boruto: Naruto Thế Hệ Tiếp Theo"
+                                                        class="heading__notifi__img-film">
+                                                </div>
+                                                <div class="heading__notifi__content">
+                                                    <p class="heading__notifi__name-vi">Boruto: Naruto Thế Hệ Tiếp Theo
+                                                    </p>
+                                                    <p class="heading__notifi__name-eng">Boruto: Naruto Next Generations
+                                                        Boruto: Naruto Next Generations</p>
+                                                    <div class="heading__notifi__info">
+                                                        <p class="heading__notifi__episode">Tập 213</p>
+                                                        <p class="heading__notifi__language">Lồng tiếng</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="heading__notifi__item">
+                                                <div class="heading__notifi__img">
+                                                    <img src="./assets/image/film/Tan-Thien-Long-Bat-Bo-2021.jpg"
+                                                        alt="Tân Thiên Long Bát Bộ 2021"
+                                                        class="heading__notifi__img-film">
+                                                </div>
+                                                <div class="heading__notifi__content">
+                                                    <p class="heading__notifi__name-vi">Tân Thiên Long Bát Bộ</p>
+                                                    <p class="heading__notifi__name-eng">Demi Gods and Semi Devils 2021
+                                                    </p>
+                                                    <div class="heading__notifi__info">
+                                                        <p class="heading__notifi__episode">Tập 31</p>
+                                                        <p class="heading__notifi__language">Thuyết minh</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="heading__notifi__item">
+                                                <div class="heading__notifi__img">
+                                                    <img src="./assets/image/film/fairy-tail.png" alt="Fairy Tail"
+                                                        class="heading__notifi__img-film">
+                                                </div>
+                                                <div class="heading__notifi__content">
+                                                    <p class="heading__notifi__name-vi">Hội Pháp Sư</p>
+                                                    <p class="heading__notifi__name-eng">Fairy Tail</p>
+                                                    <div class="heading__notifi__info">
+                                                        <p class="heading__notifi__episode">Tập 277</p>
+                                                        <p class="heading__notifi__language">Lồng tiếng</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <a href="#" class="heading__notifi__view-all">Xem tất cả</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="heading__nav-bar__list">
+                            <li class="heading__nav-bar__item">
+                                <a href="http://127.0.0.1:5500/index.html" class="heading__nav-bar__link">
+                                    TRANG CHỦ
+                                </a>
+                            </li>
+                            <li class="heading__nav-bar__item">
+                                <a href="#" class="heading__nav-bar__link">
+                                    THỂ LOẠI
+                                </a>
+                                <div class="heading__nav-bar__category">
+                                    <div class="grid heading__category__form">
+                                        <div class="row no-gutters">
+                                            <div class="col l-3">
+                                                <ul class="heading__category__list">
+                                                    <li class="heading__category__item">
+                                                        <a href="http://127.0.0.1:5500/assets/html/filter_film.html" class="heading__category__item-link">
+                                                            Phim Hành Động
+                                                        </a>
+                                                    </li>
+                                                    <li class="heading__category__item">
+                                                        <a href="http://127.0.0.1:5500/assets/html/filter_film.html" class="heading__category__item-link">
+                                                            Phim Hài
+                                                        </a>
+                                                    </li>
+                                                    <li class="heading__category__item">
+                                                        <a href="http://127.0.0.1:5500/assets/html/filter_film.html" class="heading__category__item-link">
+                                                            Phim Hình Sự
+                                                        </a>
+                                                    </li>
+                                                    <li class="heading__category__item">
+                                                        <a href="http://127.0.0.1:5500/assets/html/filter_film.html" class="heading__category__item-link">
+                                                            Phim Cổ Trang
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col l-3">
+                                                <ul class="heading__category__list">
+                                                    <li class="heading__category__item">
+                                                        <a href="http://127.0.0.1:5500/assets/html/filter_film.html" class="heading__category__item-link">
+                                                            Phim Võ Thuật
+                                                        </a>
+                                                    </li>
+                                                    <li class="heading__category__item">
+                                                        <a href="http://127.0.0.1:5500/assets/html/filter_film.html" class="heading__category__item-link">
+                                                            Phim Hoạt Hình
+                                                        </a>
+                                                    </li>
+                                                    <li class="heading__category__item">
+                                                        <a href="http://127.0.0.1:5500/assets/html/filter_film.html" class="heading__category__item-link">
+                                                            Phim Chiến Tranh
+                                                        </a>
+                                                    </li>
+                                                    <li class="heading__category__item">
+                                                        <a href="http://127.0.0.1:5500/assets/html/filter_film.html" class="heading__category__item-link">
+                                                            Phim Âm Nhạc
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col l-3">
+                                                <ul class="heading__category__list">
+                                                    <li class="heading__category__item">
+                                                        <a href="http://127.0.0.1:5500/assets/html/filter_film.html" class="heading__category__item-link">
+                                                            Phim Tình Cảm
+                                                        </a>
+                                                    </li>
+                                                    <li class="heading__category__item">
+                                                        <a href="http://127.0.0.1:5500/assets/html/filter_film.html" class="heading__category__item-link">
+                                                            Phim Phiêu Lưu
+                                                        </a>
+                                                    </li>
+                                                    <li class="heading__category__item">
+                                                        <a href="http://127.0.0.1:5500/assets/html/filter_film.html" class="heading__category__item-link">
+                                                            Phim Thần Thoại
+                                                        </a>
+                                                    </li>
+                                                    <li class="heading__category__item">
+                                                        <a href="http://127.0.0.1:5500/assets/html/filter_film.html" class="heading__category__item-link">
+                                                            Phim TV Show
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col l-3">
+                                                <ul class="heading__category__list">
+                                                    <li class="heading__category__item">
+                                                        <a href="http://127.0.0.1:5500/assets/html/filter_film.html" class="heading__category__item-link">
+                                                            Phim Tâm Lý
+                                                        </a>
+                                                    </li>
+                                                    <li class="heading__category__item">
+                                                        <a href="http://127.0.0.1:5500/assets/html/filter_film.html" class="heading__category__item-link">
+                                                            Phim Kinh Dị
+                                                        </a>
+                                                    </li>
+                                                    <li class="heading__category__item">
+                                                        <a href="http://127.0.0.1:5500/assets/html/filter_film.html" class="heading__category__item-link">
+                                                            Phim Viễn Tưởng
+                                                        </a>
+                                                    </li>
+                                                    <li class="heading__category__item">
+                                                        <a href="http://127.0.0.1:5500/assets/html/filter_film.html" class="heading__category__item-link">
+                                                            Phim Khoa Học
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="heading__nav-bar__item">
+                                <a href="#" class="heading__nav-bar__link">
+                                    QUỐC GIA
+                                </a>
+                                <div class="heading__nav-bar__category-country">
+                                    <div class="grid heading__category__form">
+                                        <div class="row no-gutters">
+                                            <div class="col l-3">
+                                                <ul class="heading__category__list">
+                                                    <li class="heading__category__item">
+                                                        <a href="http://127.0.0.1:5500/assets/html/filter_film.html" class="heading__category__item-link">
+                                                            Phim Mỹ
+                                                        </a>
+                                                    </li>
+                                                    <li class="heading__category__item">
+                                                        <a href="http://127.0.0.1:5500/assets/html/filter_film.html" class="heading__category__item-link">
+                                                            Phim Đài Loan
+                                                        </a>
+                                                    </li>
+                                                    <li class="heading__category__item">
+                                                        <a href="http://127.0.0.1:5500/assets/html/filter_film.html" class="heading__category__item-link">
+                                                            Phim Thái Lan
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col l-3">
+                                                <ul class="heading__category__list">
+                                                    <li class="heading__category__item">
+                                                        <a href="http://127.0.0.1:5500/assets/html/filter_film.html" class="heading__category__item-link">
+                                                            Phim Hàn Quốc
+                                                        </a>
+                                                    </li>
+                                                    <li class="heading__category__item">
+                                                        <a href="http://127.0.0.1:5500/assets/html/filter_film.html" class="heading__category__item-link">
+                                                            Phim Việt Nam
+                                                        </a>
+                                                    </li>
+                                                    <li class="heading__category__item">
+                                                        <a href="http://127.0.0.1:5500/assets/html/filter_film.html" class="heading__category__item-link">
+                                                            Phim Pháp
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col l-3">
+                                                <ul class="heading__category__list">
+                                                    <li class="heading__category__item">
+                                                        <a href="http://127.0.0.1:5500/assets/html/filter_film.html" class="heading__category__item-link">
+                                                            Phim Trung Quốc
+                                                        </a>
+                                                    </li>
+                                                    <li class="heading__category__item">
+                                                        <a href="http://127.0.0.1:5500/assets/html/filter_film.html" class="heading__category__item-link">
+                                                            Phim Nhật Bản
+                                                        </a>
+                                                    </li>
+                                                    <li class="heading__category__item">
+                                                        <a href="http://127.0.0.1:5500/assets/html/filter_film.html" class="heading__category__item-link">
+                                                            Phim Anh
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col l-3">
+                                                <ul class="heading__category__list">
+                                                    <li class="heading__category__item">
+                                                        <a href="http://127.0.0.1:5500/assets/html/filter_film.html" class="heading__category__item-link">
+                                                            Phim Hồng Công
+                                                        </a>
+                                                    </li>
+                                                    <li class="heading__category__item">
+                                                        <a href="http://127.0.0.1:5500/assets/html/filter_film.html" class="heading__category__item-link">
+                                                            Phim Ấn Độ
+                                                        </a>
+                                                    </li>
+                                                    <li class="heading__category__item">
+                                                        <a href="http://127.0.0.1:5500/assets/html/filter_film.html" class="heading__category__item-link">
+                                                            Phim Khác
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="heading__nav-bar__item">
+                                <a href="#" class="heading__nav-bar__link">
+                                    PHIM BỘ
+                                </a>
+                            </li>
+                            <li class="heading__nav-bar__item">
+                                <a href="#" class="heading__nav-bar__link">
+                                    PHIM LẺ
+                                </a>
+                            </li>
+                            <li class="heading__nav-bar__item">
+                                <a href="#" class="heading__nav-bar__link">
+                                    PHIM VIETSUB
+                                </a>
+                            </li>
+                            <li class="heading__nav-bar__item">
+                                <a href="#" class="heading__nav-bar__link">
+                                    PHIM THUYẾT MINH
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <div class="grid wide">
+                <div class="row no-gutters">
+                    <ul class="content__menu-list">
+                        <li class="content__menu-item">PHIM BỘ</li>
+                        <li class="content__menu-item">PHIM LẺ</li>
+                        <li class="content__menu-item">PHIM THUYẾT MINH</li>
+                    </ul>
+                </div>
+                <div class="row l-gutter">
+                    <div class="col l-8-5 m-12 c-12">
+                        <div class="grid">
+                            <!-- Viewport -->
+                            <div class="row s-gutters content__viewport__main">
+                                <div class="nowrap-banner-films">
+                                    <ul class="content__viewport__list-films">
+                                    </ul>
+                                </div>
+                                <i class="content__viewport-left fas fa-chevron-left"></i>
+                                <i class="content__viewport-right fas fa-chevron-right"></i>
+                            </div>
+                            <!-- List Product -->
+                            <!-- Title -->
+                            <div class="row no-gutters content__list-product__title">
+                                <ul class="content__title-list">
+                                    <li class="content__title-item">
+                                        <span class="content__title-item__update-movie">PHIM MỚI CẬP NHẬT</span>
+                                    </li>
+                                    <li class="content__title-item">
+                                        <span class="content__title-item__category content__title-item__category-click">Toàn bộ</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="row no-gutters content__product__foot"></div>
+                        </div>
+                        <!-- Product -->
+                        <div class="grid content__product">
+                            <div class="content__product__wrap nowrap-banner-films">
+                                <ul class="row s-gutters content__product__list">
+                                </ul>
+                            </div>
+                            <div class="content__product__new-film">
+                                <a href="/assets/html/filter_film.html" class="content__new-film__text">Xem tất cả</a>
+                                <i class="content__new-film__icon fas fa-angle-double-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3-5 m-0 c-0">
+                        <!-- Movie More -->
+                        <div class="content__movie-more hidden">
+                            <div class="content__movie-more__heading">PHIM XEM NHIỀU</div>
+                            <div class="content__product__foot"></div>
+                            <div class="content__movie-more__view">
+                                <div class="content__movie-more__info">
+                                    <!-- click add class "movie-more__time-click" -->
+                                    <div class="content__movie-more__time movie-more__time-click">Ngày</div>
+                                    <div class="content__movie-more__time">Tuần</div>
+                                    <div class="content__movie-more__time">Tháng</div>
+                                </div>
+                                <ul class="content__movie-more__list">
+                                    <li class="content__movie-more__item">
+                                        <div class="content__movie-more__count">
+                                            <div class="content__movie-more__count-img"></div>
+                                            <div class="content__movie-more__count-number">1</div>
+                                        </div>
+                                        <div class="content__movie-more__item-info">
+                                            <a href="#" class="content__movie-more__main-info name-film__vi">Đấu La Đại
+                                                Lục</a>
+                                            <div class="content__movie-more__sub-info">
+                                                <span class="content__sub-info__vi name-film__eng">Soul Land</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="content__movie-more__item">
+                                        <div class="content__movie-more__count">
+                                            <div class="content__movie-more__count-img"></div>
+                                            <div class="content__movie-more__count-number">2</div>
+                                        </div>
+                                        <div class="content__movie-more__item-info">
+                                            <a href="#" class="content__movie-more__main-info name-film__vi">Thế Giới
+                                                Phép Thuật</a>
+                                            <div class="content__movie-more__sub-info">
+                                                <span class="content__sub-info__vi name-film__eng">Black Clover</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="content__movie-more__item">
+                                        <div class="content__movie-more__count">
+                                            <div class="content__movie-more__count-img"></div>
+                                            <div class="content__movie-more__count-number">3</div>
+                                        </div>
+                                        <div class="content__movie-more__item-info">
+                                            <a href="#" class="content__movie-more__main-info name-film__vi">Hội Pháp
+                                                Sư</a>
+                                            <div class="content__movie-more__sub-info">
+                                                <span class="content__sub-info__vi name-film__eng">Fairy Tail</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="content__movie-more__item">
+                                        <div class="content__movie-more__count">
+                                            <div class="content__movie-more__count-img"></div>
+                                            <div class="content__movie-more__count-number">4</div>
+                                        </div>
+                                        <div class="content__movie-more__item-info">
+                                            <a href="#" class="content__movie-more__main-info name-film__vi">Tân Thiên
+                                                Long Bát Bộ</a>
+                                            <div class="content__movie-more__sub-info">
+                                                <span class="content__sub-info__vi name-film__eng">Demi Gods and Semi
+                                                    Devils 2021</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="content__movie-more__item">
+                                        <div class="content__movie-more__count">
+                                            <div class="content__movie-more__count-img"></div>
+                                            <div class="content__movie-more__count-number">5</div>
+                                        </div>
+                                        <div class="content__movie-more__item-info">
+                                            <a href="#" class="content__movie-more__main-info name-film__vi">Đường
+                                                Chuyên</a>
+                                            <div class="content__movie-more__sub-info">
+                                                <span class="content__sub-info__vi name-film__eng">Tang Dynasty
+                                                    Tour</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="content__movie-more__item">
+                                        <div class="content__movie-more__count">
+                                            <div class="content__movie-more__count-img"></div>
+                                            <div class="content__movie-more__count-number">6</div>
+                                        </div>
+                                        <div class="content__movie-more__item-info">
+                                            <a href="#" class="content__movie-more__main-info name-film__vi">Gia Tài Bất
+                                                Đắc Dĩ</a>
+                                            <div class="content__movie-more__sub-info">
+                                                <span class="content__sub-info__vi name-film__eng">Brilliant
+                                                    Heritage</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="content__movie-more__item">
+                                        <div class="content__movie-more__count">
+                                            <div class="content__movie-more__count-img"></div>
+                                            <div class="content__movie-more__count-number">7</div>
+                                        </div>
+                                        <div class="content__movie-more__item-info">
+                                            <a href="#" class="content__movie-more__main-info name-film__vi">Boruto:
+                                                Naruto Thế Hệ Tiếp Theo</a>
+                                            <div class="content__movie-more__sub-info">
+                                                <span class="content__sub-info__vi name-film__eng">Boruto: Naruto Next
+                                                    Generations</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="content__movie-more__item">
+                                        <div class="content__movie-more__count">
+                                            <div class="content__movie-more__count-img"></div>
+                                            <div class="content__movie-more__count-number">8</div>
+                                        </div>
+                                        <div class="content__movie-more__item-info">
+                                            <a href="#" class="content__movie-more__main-info name-film__vi">Trường An
+                                                Như Cố</a>
+                                            <div class="content__movie-more__sub-info">
+                                                <span class="content__sub-info__vi name-film__eng">One and Only</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="content__movie-more__item">
+                                        <div class="content__movie-more__count">
+                                            <div class="content__movie-more__count-img"></div>
+                                            <div class="content__movie-more__count-number">9</div>
+                                        </div>
+                                        <div class="content__movie-more__item-info">
+                                            <a href="#" class="content__movie-more__main-info name-film__vi">Những Đứa
+                                                Con Nhà Họ Kiều</a>
+                                            <div class="content__movie-more__sub-info">
+                                                <span class="content__sub-info__vi name-film__eng">The Bond</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="content__movie-more__item">
+                                        <div class="content__movie-more__count">
+                                            <div class="content__movie-more__count-img"></div>
+                                            <div
+                                                class="content__movie-more__count-number content__movie-more__count-number-fix">
+                                                10</div>
+                                        </div>
+                                        <div class="content__movie-more__item-info">
+                                            <a href="#" class="content__movie-more__main-info name-film__vi">Hãy Yêu
+                                                Nhau Dưới Trăng Tròn</a>
+                                            <div class="content__movie-more__sub-info">
+                                                <span class="content__sub-info__vi name-film__eng">Love Under The Full
+                                                    Moon</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Nominated movies and Completed -->
+                        <div class="content__nom-com-movie hidden">
+                            <div class="content__nom-com-movie__heading">
+                                <!-- click add class "nom-com-movie__heading__text-click" -->
+                                <div class="nom-com-movie__heading__frames">
+                                    <div class="nom-com-movie__heading__text nom-com-movie__heading__text-click">Phim đề
+                                        cử</div>
+                                </div>
+                                <div class="nom-com-movie__heading__frames">
+                                    <div class="nom-com-movie__heading__text">Đã hoàn thành</div>
+                                </div>
+                            </div>
+                            <ul class="content__nom-com-movie__list">
+                                <li class="content__nom-com-movie__item">
+                                    <a href="#" class="nom-com-movie__item__name name-film__vi">Điên Thì Có Sao</a>
+                                    <div class="nom-com-movie__item__episode">16 Tập</div>
+                                </li>
+                                <li class="content__nom-com-movie__item">
+                                    <a href="#" class="nom-com-movie__item__name name-film__vi">Cửa Hàng Tiện Lợi Saet
+                                        Byul</a>
+                                    <div class="nom-com-movie__item__episode">16 Tập</div>
+                                </li>
+                                <li class="content__nom-com-movie__item">
+                                    <a href="#" class="nom-com-movie__item__name name-film__vi">Quân Vương Bất Diệt</a>
+                                    <div class="nom-com-movie__item__episode">16 Tập</div>
+                                </li>
+                                <li class="content__nom-com-movie__item">
+                                    <a href="#" class="nom-com-movie__item__name name-film__vi">Những Bác Sĩ Tài Hoa</a>
+                                    <div class="nom-com-movie__item__episode">16 Tập</div>
+                                </li>
+                                <li class="content__nom-com-movie__item">
+                                    <a href="#" class="nom-com-movie__item__name name-film__vi">Tiểu Sử Chàng Nok Du</a>
+                                    <div class="nom-com-movie__item__episode">32 Tập</div>
+                                </li>
+                                <li class="content__nom-com-movie__item">
+                                    <a href="#" class="nom-com-movie__item__name name-film__vi">Tổ Chức Rugal</a>
+                                    <div class="nom-com-movie__item__episode">16 Tập</div>
+                                </li>
+                                <li class="content__nom-com-movie__item">
+                                    <a href="#" class="nom-com-movie__item__name name-film__vi">Tìm Em Trong Ký Ức</a>
+                                    <div class="nom-com-movie__item__episode">32 Tập</div>
+                                </li>
+                                <li class="content__nom-com-movie__item">
+                                    <a href="#" class="nom-com-movie__item__name name-film__vi">Hồi Ức</a>
+                                    <div class="nom-com-movie__item__episode">16 Tập</div>
+                                </li>
+                                <li class="content__nom-com-movie__item">
+                                    <a href="#" class="nom-com-movie__item__name name-film__vi">Chào Mẹ, Tạm Biệt!</a>
+                                    <div class="nom-com-movie__item__episode">32 Tập</div>
+                                </li>
+                                <li class="content__nom-com-movie__item">
+                                    <a href="#" class="nom-com-movie__item__name name-film__vi">Tầng Lớp Itaewon</a>
+                                    <div class="nom-com-movie__item__episode">16 Tập</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="grid wide">
+                <div class="row footer__gutters">
+                    <div class="col l-2 m-2 c-6">
+                        <div class="footer__heading">TVHAY</div>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__item__link">
+                                    Giới thiệu
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item__link">
+                                    Facebook TVH
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item__link">
+                                    Youtube Channel
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2 m-2 c-6">
+                        <div class="footer__heading">ĐÓNG GÓP</div>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__item__link">
+                                    Hướng dẫn sử dụng
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item__link">
+                                    Liên hệ quảng cáo
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item__link">
+                                    Góp ý
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2 m-2 c-6">
+                        <div class="footer__heading">QUY ĐỊNH</div>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__item__link">
+                                    Điều khoản sử dụng
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item__link">
+                                    Chính sách riêng tư
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item__link">
+                                    Nguyên tắc cộng đồng
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item__link">
+                                    Khiếu nại bản quyền
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2 m-2 c-6">
+                        <div class="footer__heading">TRỢ GIÚP</div>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__item__link">
+                                    Hỏi đáp
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item__link">
+                                    Liên hệ
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item__link">
+                                    Báo lỗi
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-4 m-4 c-0">
+                        <div class="footer__wrap">
+                            <img src="https://metruyenchu.net/uploads/Images/dau-pha-thuong-khung.jpg" alt="background logo" class="footer__img">
+                            <div class="footer__content">
+                                <div class="footer__web-info">
+                                    <a href="https://www.facebook.com/yeu.tvh/" class="footer__web-info__name">Phim TVH</a>
+                                    <div class="footer__web-info__facebook">
+                                        <i class="footer__facebook__icon fab fa-facebook-square"></i>
+                                        <div class="footer__facebook__text">Thích trang</div>
+                                    </div>
+                                </div>
+                                <div class="footer__web-info__like">15k lượt thích</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="app__overlay"></div>
+    </div>
+
+    <script type="module" src="./home.js"></script>
+    <script type="module" src="./assets/JS/search_film.js"></script>
+</body>
+
+</html>

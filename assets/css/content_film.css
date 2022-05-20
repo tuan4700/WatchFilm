@@ -1,0 +1,213 @@
+/* --------------Content------------------------------- */
+/* --Begin-- */
+/* Infomation Film */
+.content-film {
+    margin-bottom: 6px;
+}
+
+.content-film__info {
+    background-color: var(--white-color);
+    min-height: 480px;
+}
+
+.content-film__info__block-img {
+    width: 182px;
+    height: 232px;
+    margin: 8px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #CCCCCC;
+}
+
+.content-film__info__img {
+    width: 174px;
+    height: 224px;
+}
+
+.content-film__detail {
+    flex: 1;
+}
+
+.content-film__info__name {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--sub-general-color);
+    margin: 18px 0 10px 0;
+}
+
+.content-film__info__sub-name {
+    color: var(--black-color);
+    font-size: 1.3rem;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.content-film__info__status-nation,
+.content-film__info__actor-director,
+.content-film__info__genre-time {
+    display: flex;
+}
+
+.content-film__info__status,
+.content-film__info__nation,
+.content-film__info__actor,
+.content-film__info__director,
+.content-film__info__genre,
+.content-film__info__time {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding: 8px 0;
+    border-bottom: 1px solid #E7E7E7;
+}
+
+.content-film__info__status,
+.content-film__info__actor,
+.content-film__info__genre {
+    flex-basis: 56%;
+    margin-right: 20px;
+}
+
+.content-film__info__episodes,
+.content-film__info__language,
+.content-film__info__actor-name,
+.content-film__info__genre-name {
+    font-size: 1.2rem;
+    color: #FF0000;
+    font-weight: 600;
+}
+
+.content-film__info__episodes,
+.content-film__info__actor-name,
+.content-film__info__genre-name {
+    padding-left: 8px;
+}
+
+.content-film__info__language {
+    padding-left: 2px;
+}
+
+.content-film__info__nation,
+.content-film__info__director,
+.content-film__info__time {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.content-film__info__nation-name,
+.content-film__info__director-name,
+.content-film__info__time-number {
+    font-size: 1.4rem;
+    padding-left: 8px;
+    font-weight: 500;
+}
+
+.content-film__info__actor-name,
+.content-film__info__director-name,
+.content-film__info__time-number {
+    color: var(--text-color);
+}
+
+.content-film__info__genre-name {
+    color: var(--black--color);
+}
+
+.content-film__info__watch-like-rating {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-film__info__watch {
+    display: block;
+    text-decoration: none;
+    width: 146px;
+    height: 40px;
+    margin-top: 16px;
+    background-color: var(--general-color);
+    border-radius: 4px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--white-color);
+    padding: 0 0 0 44px;
+    line-height: 40px;
+    position: relative;
+}
+
+.content-film__info__block-play {
+    width: 26px;
+    height: 26px;
+    background-color: #0D7DC5;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    border-radius: 4px;
+}
+
+.content-film__info__watch-play {
+    margin: auto;
+    font-size: 1rem;
+}
+
+.content-film__info__like {
+    width: 132px;
+    height: 26px;
+    background-color: #929292;
+    border-radius: 3px;
+    margin: 8px 20px 0 0;
+    font-size: 1.15rem;
+    font-weight: 600;
+    line-height: 26px;
+    color: var(--white-color);
+    text-align: end;
+    padding-right: 12px;
+    position: relative;
+}
+
+.content-film__info__rating {
+    display: flex;
+    justify-content: end;
+    margin: 6px 20px 0 0;
+    font-size: 1.4rem;
+}
+
+.content-film__info__rating-icon {
+    margin-left: 4px;
+    color: #BDC1C6;
+}
+
+.content-film__info__rating-icon.number-rating {
+    color: #5F6368;
+}
+
+.content-film__info__content-heading {
+    width: 100%;
+    font-size: 1.4rem;
+}
+
+.content-film__info__content-heading .nom-com-movie__heading__frames,
+.content-film__info__content-heading .nom-com-movie__heading__text {
+    height: 30px;
+    line-height: 30px;
+}
+
+.content-film__info__content-heading .nom-com-movie__heading__frames {
+    margin-left: 22px;
+}
+
+.content-film__info__content {
+    font-size: 1.4rem;
+    padding: 10px;
+    line-height: 22px;
+}
+
+.content-film__info__key {
+    padding-left: 10px;
+    font-size: 1.1rem;
+    line-height: 18px;
+}
+
+/* --End-- */

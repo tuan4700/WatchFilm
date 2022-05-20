@@ -1,0 +1,27 @@
+/* Tablet and Mobile */
+@media (max-width: 1023px) {
+    .watch-film__zoom-in {
+        display: none;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    
+
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .block-content {
+        margin-top: calc(var(--height-handle-video) - 74px);
+    }
+
+    .watch-film__handle-video {
+        height: calc(var(--height-handle-video) - 74px);
+    }
+
+    .watch-film__video {
+        height: 330px;
+    }
+}
