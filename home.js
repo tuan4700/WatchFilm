@@ -11,7 +11,6 @@ const prevOfferFilms = $('.content__viewport-left');
 
 const app = {
     widthOfferFilm: 0,
-
     renderFilms: function (listFilms) {
         var i = 0;
         const htmlFilms = listFilms.map(film => {
